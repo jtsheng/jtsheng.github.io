@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/icon" href="resources/favicon.ico">
+		<title>Computer Science | Saint Mary's College</title>
+	</head>
+	<body>
+		<header class="header">
+			<img id="smc-logo" src="/resources/imgs/smc-logo-color.png" alt="Saint Mary's College Logo">
+
+			<nav class="nav">
+			<a href="#consider-this">Consider This!</a>
+			<a href="#courses">Courses</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		</header>
+
+		<section class="main">
+			<h1 class="main-title">Computer Science</h1>
+		</section>
+
+		<section class="section-alt" id="consider-this">
+			<div class="container">
+				<div class="split-layout">
+					<div class="split-text">
+						<span class="section-tag">Explore the Major</span>
+						<h2>Is Computer Science Right for You?</h2>
+						<p>Ask yourself these questions!</p>
+						<ul class="cs-checklist">
+							<li>Interested in <strong>Machine Learning</strong>, Databases, or Data Visualisation?</li>
+							<li>Want to <strong>build technology</strong> that shapes the future?</li>
+							<li>Confident in your <strong>problem-solving</strong> skills?</li>
+						</ul>
+						<p class="answer-text">If you answered "yes" to at least one of these questions, then Computer Science might be for you!</p>
+					</div>
+
+					<div class="weather-widget" id="weatherWidget">
+						<div class="weather-loading" id="weatherLoading">
+							<div class="weather-spinner">
+								<span>Loading Weather...</span>
+							</div>
+							<div class="weather-content" id="weatherContent" style="display:none;">
+								<div class="weather-location" id="weatherLocation">Moraga, CA</div>
+								<div class="weather-main">
+									<span class="weather-icon" id="weatherIcon">Temperature</span>
+									<span class="weather-temp" id="weatherTemp">--°F</span>
+								</div>
+								<div class="weather-desc" id="weatherDesc">--</div>
+								<div class="weather-details">
+									<div class="weather-detail-item">
+										<span class="weather-detail-label">Feels Like</span>
+										<span class="weather-detail-val" id="weatherFeels">--</span>
+									</div>
+									<div class="weather-detail-item">
+										<span class="weather-detail-label">Humidity</span>
+										<span class="weather-detail-val" id="weatherHumidity">--</span>
+									</div>
+									<div class="weather-detail-item">
+										<span class="weather-detail-label">Wind</span>
+										<span class="weather-detail-val" id="weatherWind">--</span>
+									</div>
+								</div>
+								<div class="weather-credit">Open-Meteo</div>
+							</div>
+							<div class="weather-error" id="weatherError" style="display:none;">
+								<span>Weather Unavailable! Check back again soon.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="courses">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Courses and Electives</span>
+					<h2>Recommended Courses to Explore</h2>
+					<p>While all 11 courses for the major are required, there are some options when it comes to the electives. Out of the 11 electives, only 3 are required from the list. These are some of my personal choices!</p>
+				</div>
+				<div class="course-grid">
+					<a class="course-card" href="https://catalog.stmarys-ca.edu/search_advanced.php?cur_cat_oid=21&search_database=Search&search_db=Search&cpage=1&ecpage=1&ppage=1&spage=1&tpage=1&location=3&filter%5Bkeyword%5D=DATA+320+Machine+Learning&filter%5Bexact_match%5D=1" target="_blank">
+						<div>
+							<h3>DATA 320 - Machine Learning</h3>
+							<p>This course covers predictive modeling techniques and exposes students to current practices and technologies that businesses use to turn data into useful information. Topics include data mining and text and web analytics. Python will be the predominant language in this course.</p>
+						</div>
+					</a>
+					<a class="course-card" href="https://catalog.stmarys-ca.edu/search_advanced.php?cur_cat_oid=21&search_database=Search&search_db=Search&cpage=1&ecpage=1&ppage=1&spage=1&tpage=1&location=3&filter%5Bkeyword%5D=DATA+210+Data+Visualization&filter%5Bexact_match%5D=1" target="_blank">
+						<div>
+							<h3>DATA 210 - Data Visualisation</h3>
+							<p>This course provides an introduction and hands-on experience into transforming data into visualised reports. By using certain visualisation softwares such as MySQL and Tableau, students will be able to organise and visualise quantitative and qualitative data in understandable formats.</p>
+						</div>
+					</a>
+					<a class="course-card" href="https://catalog.stmarys-ca.edu/search_advanced.php?cur_cat_oid=21&search_database=Search&search_db=Search&cpage=1&ecpage=1&ppage=1&spage=1&tpage=1&location=3&filter%5Bkeyword%5D=DATA+305+Advanced+Quantitative+Analysis&filter%5Bexact_match%5D=1" target="_blank">
+						<div>
+							<h3>DATA 305 - Advanced Quantitative Analysis</h3>
+							<p>This course involves the study of theories and practices of diverse quantitative methods and procedures relating to finance, marketing, operations, corporate strategy, and providing business analytics. Topics include linear and logistic regression modelling, optimisation, and computer simulations.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="gallery">
+			<div class="container">
+				<div class="gallery">
+					<img src="/resources/imgs/html-css-js.png" alt="HTML, CSS, JavaScript">
+					<img src="/resources/imgs/java.png" alt="Java">
+					<img src="/resources/imgs/python.png" alt="Python">
+				</div>
+			</div>
+		</section>
+
+		<!-- shrim -->
+		<section class="section" id="contact">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Contact</span>
+					<h2>Interested? Let us know in the form below!</h2>
+				</div>
+				<form class="contact-form" id="contactForm" novalidate>
+					<div class="form-row">
+						
+						<div class="form-group">
+							<label for="firstName">First Name<span class="required">*</span></label>
+							<input type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="shrimpy">
+							<span class="field-error" id="firstNameErr"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="lastName">Last Name<span class="required">*</span></label>
+							<input type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="shrimp">
+							<span class="field-error" id="lastNameErr"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email Address<span class="required">*</span></label>
+							<input type="email" id="email" name="email" autocomplete="email" placeholder="shrimpyshrimp@prawn.com">
+							<span class="field-error" id="emailErr"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="year">Year / Status<span class="required">*</span></label>
+							<select id="year" name="year">
+								<option value="">- Select -</option>
+								<option value="freshman">Incoming Freshman</option>
+								<option value="sophomore">Sophomore</option>
+								<option value="junior">Junior</option>
+								<option value="senior">Senior</option>
+								<option value="transfer">Transfer Student</option>
+								<option value="other">Other</option>
+							</select>
+							<span class="field-error" id="yearErr"></span>
+						</div>
+						<div>
+							<label for="interest">Area of Interest</label>
+							<select id="interest" name="interest">
+								<option value="">- Select -</option>
+								<option value="ml">Machine Learning / AI</option>
+								<option value="db">Databases</option>
+								<option value="dv">Data Visualisation</option>
+								<option value="other">Other / Undecided</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="4" placeholder="Tell us a bit about yourself or ask a question! (ex. 'do you like shrimp?')"></textarea>
+							<span class="char-count" id="charcount"> 0 / 500</span>
+							<span class="field-error" id="messageErr"></span>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="button button-primary button-submit" id="submitButton">Send</button>
+							<span class="form-status" id="formStatus"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-name">Saint Mary's College of California</div>
+				<div class="footer-dept">Department of Math & Computer Science</div>
+				<div class="footer-links">
+					<a href="https://catalog.stmarys-ca.edu/index.php" target="_blank">Program Catalog (2025-2026)</a>
+					<a href="https://www.stmarys-ca.edu" target="_blank">Saint Mary's College Homepage</a>
+				</div>
+				<div class="footer-copy">© 2026 Saint Mary's College of California</div>
+			</div>
+		</footer>
+		
+		<script src="index.js"></script>
+	</body>
+</html>

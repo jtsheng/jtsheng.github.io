@@ -1,0 +1,134 @@
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/saint-marys-logo.png">
+    <meta charset="UTF-8">
+    <title>My On-Campus Job</title>
+</head>
+
+<body>
+    <div id="weatherDivContainer">
+        <div id="weatherDiv">
+            <p id="weather">Weather</p>
+            <img id="weatherIcon" src="" alt="weather icon">
+        </div>
+    </div>
+    <div id="intro-message">
+        <img id="smc-img" src="images/saint-marys-logo.png" width="220" height="150" alt="saint mary's logo">
+        <h1 id="title">My On-Campus Job</h1>
+        <h2 id="subtitle">Josh Press</h2>
+        <h2 id="subtitle">Student Disability Services (SDS)</h2>
+    </div>
+
+    <section>
+        <div id="what-I-Do">
+            <h3>What I Do</h3>
+            <img id="book-img" src="images/book.png" alt="book">
+            <img id="computer-img" src="images/computer.png" alt="computer"><br>
+
+            <p>This website describes my on-campus job. I am a student worker at SDS. I work on processing books for
+                students with accommodations.
+                This includes:
+            </p>
+            <ul>
+                <li>Processing student receipts for class textbooks.</li>
+                <li>Making sure books are in accessible formats, such as ensuring the books work with screen readers.
+                    This can be difficult if the quality of the book or scan is poor.</li>
+
+                <li>Captioning videos and describing images.</li>
+            </ul>
+
+            <p>The software I use includes:</p>
+            <ol>
+                <li>Adobe Acrobat</li>
+                <ol type="a">
+                    <li>For adding bookmarks to PDFs.</li>
+                    <li>OCR for recognizing text in books without text already.</li>
+                </ol>
+                <li>Kurzweil 3000</li>
+                <ol type="a">
+                    <li>Screen reader software for students. I also use the software to upload books.</li>
+                    <li>Also used for zoning of the books to make sure they are read in the correct order.</li>
+                </ol>
+                <li>Microsoft Word</li>
+                <ol type="a">
+                    <li>For adding headings to documents and formatting text.</li>
+                </ol>
+                <li>Adobe Premiere</li>
+                <ol type="a">
+                    <li>For captioning videos.</li>
+                </ol>
+        </div>
+
+
+    </section>
+
+
+    <div id="grid-container">
+        <figure>
+            <img src="images/receipt.png" width="140px" height="150px" alt="book receipt">
+            <figcaption id="receiptCaption">Processing Receipts</figcaption>
+            <button id="receiptButton">Show More</button>
+        </figure>
+        <figure>
+            <canvas id="bookCanvas" width="100px" height="120px"></canvas>
+            <figcaption id="bookCaption">Converting Books</figcaption>
+            <button id="bookButton">Show More</button>
+        </figure>
+        <figure>
+            <img src="images/video-captioning.jpg" width="160px" height="120px" alt="video captioning">
+            <figcaption id="figCaption3">Video Captioning</figcaption>
+            <button id="showmore3">Show More</button>
+        </figure>
+    </div>
+
+
+    <section>
+        <h3>Learn More</h3>
+        <form id="learnMore">
+            <p><span id="asterisk">*</span> Indicates required fields</p>
+            <label for="name">Name: <span id="asterisk">*</span> </label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="email">Email:<span id="asterisk">* </span></label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="year">Year:<span id="asterisk">*</span> </label>
+            <select id="year" name="year" required>
+                <option>Select</option>
+                <option>Freshman</option>
+                <option>Sophomore</option>
+                <option>Junior</option>
+                <option>Senior</option>
+                <option>Graduate</option>
+            </select>
+
+            <label for="other">Other comments?</label>
+            <textarea for="other" id="other" placeholder="Enter comments here"></textarea><br>
+            <input id="submit" type="submit" value="Submit">
+
+            <div id="formErrors"></div>
+            <div id="formSuccess"></div>
+
+
+        </form>
+    </section>
+    <footer>
+        <a href="https://www.istockphoto.com/vector/desktop-computer-icon-vector-isolated-gm942286504-257520911">Computer
+            Icon Source</a>
+        <a
+            href="https://www.vecteezy.com/vector-art/50740302-book-flat-icon-clip-art-design-single-high-quality-outline-book-symbol-clip-arts">Book
+            Icon Source</a>
+        <a href="https://www.flaticon.com/free-icon/sunny_7084512">Sunny Weather Icon</a>
+        <a href="https://www.flaticon.com/free-icon/cloudy_7084486">Cloudy Weather Icon</a>
+        <a
+            href="https://www.flaticon.com/free-icon/rainy-day_4724094?term=rainy&page=1&position=2&origin=search&related_id=4724094">Rainy
+            Weather Icon</a>
+        <a
+            href="https://images.rawpixel.com/dark_image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI1LTA1L3NyLWltYWdlLTE1MDUyMDI1LWF1LXMtMDE1XzIucG5n.png">Receipt
+            Picture</a>
+        <a href="https://www.vecteezy.com/vector-art/15672520-realistic-youtube-multimedia-player-template">Captioning
+            Videos Source</a>
+    </footer>
+</body>

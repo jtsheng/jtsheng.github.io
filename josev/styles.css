@@ -1,0 +1,306 @@
+/* =============================================
+   CWAC WebPage – styles.css
+   ============================================= */
+
+/* --- Colors --- */
+:root {
+  --navy:   #1a2744;
+  --gold:   #c8973a;
+  --cream:  #f9f5ee;
+  --white:  #ffffff;
+  --gray:   #555555;
+  --light:  #ede9df;
+  --error:  #c0392b;
+  --success:#2e7d32;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--navy);
+  background-color: var(--cream);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 2rem 2rem 0 2rem;
+}
+
+.logo {
+  height: 72px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--gold);
+  margin-top: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 0.5rem;
+}
+
+nav a {
+  color: var(--white);
+  font-size: 0.9rem;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--gold);
+  color: var(--navy);
+  text-decoration: none;
+}
+
+/* --- WEATHER BANNER --- */
+.weather-banner {
+  background-color: var(--gold);
+  color: var(--navy);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* --- SECTIONS --- */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.alt-bg {
+  background-color: var(--light);
+  max-width: 100%;
+}
+
+.alt-bg > * {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+p {
+  margin-bottom: 0.9rem;
+  color: var(--gray);
+}
+
+ol {
+  margin-left: 1.5rem;
+  color: var(--gray);
+}
+
+ol li {
+  margin-bottom: 0.4rem;
+}
+
+/* --- SERVICES GRID --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  padding: 1.25rem 1.5rem;
+  border-radius: 2px;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* --- PHOTO GRID --- */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.photo-grid figure {
+  text-align: center;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+
+}
+
+.photo-grid figcaption {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+/* --- FORM --- */
+#appt-form {
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border-radius: 2px;
+  padding: 0.55rem 0.75rem;
+  background: var(--white);
+  color: var(--navy);
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.error-msg {
+  color: var(--error);
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+  min-height: 1em;
+}
+
+.char-count {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+button[type="submit"] {
+  background-color: var(--navy);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.03em;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--gold);
+  color: var(--navy);
+}
+
+.success-msg {
+  color: var(--success);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: var(--navy);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 0.35rem;
+}
+
+.sources {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55) !important;
+}
+
+.sources a {
+  color: var(--gold);
+}

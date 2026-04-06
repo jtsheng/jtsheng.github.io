@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMC Rugby vs Cal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/smc_logo.png" alt="Saint Mary's College Logo" id="logo" />
+    <h1>SMC Gaels Rugby</h1>
+    <p class="subtitle">vs. Cal Bears -- Saturday, March 28 at 1:00 PM</p>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <main>
+    <section id="about">
+      <h2>The Rivalry Game</h2>
+      <p>
+        It's time. The Saint Mary's Gael Rugby team takes on the
+        UC Berkeley Cal Bears this Saturday in one of the most anticipated matchups
+        of the season. Come out to the Saint Mary's Stadium and cheer on your Gaels!
+      </p>
+
+      <!-- LIST REQUIREMENT -->
+      <h3>Details</h3>
+      <ul>
+        <li><strong>Date:</strong> Saturday, March 28</li>
+        <li><strong>Kickoff:</strong> 1:00 PM</li>
+        <li><strong>Location:</strong> Saint Mary's College, Moraga, CA</li>
+        <li><strong>Admission:</strong> Free for SMC students, $5 for guests</li>
+        <li><strong>What to wear:</strong> Red &amp; Blue</li>
+      </ul>
+    </section>
+
+    <!-- COUNTDOWN TIMER (JS feature) -->
+    <section id="countdown-section">
+      <h2>Countdown to Kickoff</h2>
+      <div id="countdown">
+        <div class="time-block"><span id="days">--</span><label>Days</label></div>
+        <div class="time-block"><span id="hours">--</span><label>Hours</label></div>
+        <div class="time-block"><span id="minutes">--</span><label>Minutes</label></div>
+        <div class="time-block"><span id="seconds">--</span><label>Seconds</label></div>
+      </div>
+    </section>
+
+    <!-- WEATHER SECTION (API requirement) -->
+    <section id="weather-section">
+      <h2>Game Day Weather</h2>
+      <button id="weather-btn">Check Moraga Weather</button>
+      <div id="weather-result"></div>
+    </section>
+
+    <!-- PHOTO GRID (3 photos in grid) -->
+    <section id="photos">
+      <h2>Gaels in Action</h2>
+      <div class="photo-grid">
+        <img src="images/rugby1.jpeg" alt="SMC Rugby action 1" />
+        <img src="images/rugby2.png" alt="SMC Rugby action 2" />
+        <img src="images/rugby3.webp" alt="SMC Rugby action 3" />
+      </div>
+    </section>
+
+    <!-- FORM with error checking (JS requirement) -->
+    <section id="rsvp-section">
+      <h2>RSVP and Let Us Know You're Coming!</h2>
+      <div id="rsvp-form">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <select id="guests">
+          <option value="">Number of guests</option>
+          <option value="1">Just me</option>
+          <option value="2">2 people</option>
+          <option value="3">3 people</option>
+          <option value="4">4+ people</option>
+        </select>
+        <button id="rsvp-btn">RSVP Now</button>
+        <p id="form-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Go Gaels! &copy; 2026 Saint Mary's College Rugby</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

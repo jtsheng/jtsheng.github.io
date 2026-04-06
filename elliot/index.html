@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Saint Mary's Cross</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+
+   <header>
+      <img src="https://uploads.onecompiler.io/44hjjs8s5/44hjjcrrw/230330_SMC%20logos_FINAL-10.png" class="logo">
+      <h1>The Saint Mary’s Cross</h1>
+   </header>
+
+   <section>
+      <p>
+         The Saint Mary’s Cross is one of the most iconic landmarks on campus.
+         It represents tradition, community, and the spiritual identity of Saint Mary’s College.
+      </p>
+   </section>
+
+   <!-- LIST REQUIREMENT -->
+   <section>
+      <h2>Why the Cross Matters</h2>
+      <ul>
+         <li>Symbol of campus tradition</li>
+         <li>Spiritual and cultural significance</li>
+         <li>Popular gathering and photo location</li>
+      </ul>
+   </section>
+
+   <!-- IMAGE GRID -->
+   <section class="gallery">
+      <img src="https://uploads.onecompiler.io/44hjjs8s5/44hjjcrrw/sunset-above-st-marys-college-of-california.jpeg">
+      <img src="https://uploads.onecompiler.io/44hjjs8s5/44hjjcrrw/images.jpeg">
+      <img src="https://uploads.onecompiler.io/44hjjs8s5/44hjjcrrw/360_F_661682614_Bq26fnduoAC8Ln35zCzI9TRHI8JQGG67.jpg">
+   </section>
+
+   <!-- EVENT FEATURE -->
+   <section>
+      <button id="factBtn">Show Fun Fact</button>
+      <p id="fact"></p>
+   </section>
+
+   <!-- WEATHER API -->
+   <section>
+      <h2>Weather at Saint Mary’s</h2>
+      <button onclick="getWeather()">Get Weather</button>
+      <p id="weather"></p>
+   </section>
+
+   <!-- FORM -->
+   <section>
+      <h2>Your Favorite Campus Spot</h2>
+      <input type="text" id="spot" placeholder="Enter a place">
+      <button onclick="submitForm()">Submit</button>
+      <p id="error"></p>
+   </section>
+
+   <!-- EXTRA FEATURE -->
+   <section>
+      <button onclick="toggleMode()">Toggle Dark Mode</button>
+   </section>
+
+</body>
+</html>

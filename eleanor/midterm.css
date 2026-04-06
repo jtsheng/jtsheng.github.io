@@ -1,0 +1,117 @@
+body {
+    background-color: #001B3A;
+    font-family: Montserrat;
+}
+
+#top {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#smc-logo {
+    display: block;
+    margin: 10px auto 0 auto; 
+    width: 20%;
+}
+
+#intro {
+    background-color: #8B0000;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
+    font-size: 70px;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 90%;
+}
+
+img {
+    border: 1px solid #8B0000;
+    width: 120px;
+}
+
+#content-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 40px auto;
+    gap: 40px;
+    color: #F5F5F5;
+}
+
+#exec-section {
+    width: 45%;
+}
+
+#exec_team {
+    font-size: 35px;
+}
+
+li {
+    font-size: 27px;
+}
+
+.bio {
+    font-size: 20px;
+}
+
+#about-section {
+    width: 45%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#about-us {
+    font-size: 35px;
+}
+
+#description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fact-section {
+    width: 45%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -350px;
+    text-align: center;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+#fact-button {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#fact-button:hover {
+    transform: scale(1.05);
+}
+
+#fact-button:active {
+    transform: scale(0.95);
+}
+
+#fact-button.pop {
+    transform: scale(1.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#fact-display {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #00224E;
+    border-left: 4px solid #8B0000;
+    border-radius: 6px;
+    min-height: 40px;
+    width: 90%;
+}

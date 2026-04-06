@@ -1,0 +1,220 @@
+body {
+    font-family: "times New Roman", Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    color: black;
+    background-color: ghostwhite;
+}
+
+main,
+.site-header,
+.site-footer {
+    width: min(1100px, 92vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+    color: darkslategray;
+}
+
+p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.75rem 0 1rem;
+    border-bottom: 3px solid midnightblue;
+}
+
+.brand-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.tagline {
+    margin: 0.35rem 0 0;
+    font-size: 0.95rem;
+    color: dimgray;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-nav a {
+    font-weight: 600;
+}
+
+.intro,
+.topics,
+.interest {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin: 1.75rem 0;
+    box-shadow: 0 12px 30px whitesmoke;
+}
+
+.panel {
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid darkgray;
+    background-color: lightcyan;
+}
+
+.panel[hidden] {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(darkslateblue, steelblue, cornflowerblue);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover,
+.button:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px lightgray;
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.topics-lead {
+    color: darkslategray;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.topic-card {
+    border: 1px solid ghostwhite;
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    background: linear-gradient(white, floralwhite, whitesmoke);
+}
+
+.topic-card h3 {
+    margin-top: 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 100px));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid lightsteelblue;
+    background-color: lightsteelblue;
+}
+
+.interest-form fieldset {
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin: 0;
+}
+
+.interest-form legend {
+    padding: 0 0.35rem;
+    font-weight: 600;
+    color: black;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.form-row input {
+    font: inherit;
+    padding: 0.55rem 0.65rem;
+    border-radius: 8px;
+    border: 1px solid lightsteelblue;
+    background-color: ghostwhite;
+}
+
+.form-row textarea {
+    font: inherit;
+    padding: 0.55rem 0.65rem;
+    border-radius: 8px;
+    border: 1px solid lightsteelblue;
+    background-color: ghostwhite;
+    resize: vertical;
+    min-height: 96px;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: 3px solid lightsteelblue;
+    outline-offset: 1px;
+}
+
+.form-status {
+    min-height: 1.25rem;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+.site-footer {
+    padding: 2rem 0 3rem;
+    text-align: center;
+    color: darkslategray;
+    font-size: 0.95rem;
+}
+
+.footer-meta {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+}

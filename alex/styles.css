@@ -1,0 +1,200 @@
+/* ── Reset & Base ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f5f0e8;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+  background-color: #002868; /* SMC navy blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#logo {
+  width: 200px;
+  margin-bottom: 0.75rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #c8a951; /* gold accent */
+  margin-top: 0.4rem;
+}
+
+/* ── Sections ── */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #002868;
+  /* Underline with gold accent */
+  border-bottom: 3px solid #c8a951;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* ── Countdown ── */
+#countdown {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.time-block {
+  background-color: #002868;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  min-width: 80px;
+}
+
+.time-block span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c8a951;
+}
+
+.time-block label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── Weather ── */
+#weather-btn {
+  background-color: #002868;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#weather-btn:hover {
+  background-color: #c8a951;
+  color: #002868;
+}
+
+#weather-result {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  background: #fff;
+  border-left: 4px solid #c8a951;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  display: none;
+}
+
+/* ── Photo Grid ── */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid #002868;
+}
+
+/* ── RSVP Form ── */
+#rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 420px;
+}
+
+#rsvp-form input,
+#rsvp-form select {
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+#rsvp-btn {
+  background-color: #c8a951;
+  color: #002868;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#rsvp-btn:hover {
+  background-color: #002868;
+  color: #fff;
+}
+
+#form-message {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.success { color: green; }
+.error   { color: red; }
+
+/* ── Footer ── */
+footer {
+  background-color: #002868;
+  color: #c8a951;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}

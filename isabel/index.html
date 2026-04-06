@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Saint Mary's Womens Soccer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+   <h1> Saint Mary's Womens Soccer</h1>
+  <div class = "smc-logo">
+    <img src = "smclogopic.jpeg" alt = " ">
+    </div>
+      <h2>Welcome to the home page for your Saint Mary's Womens Soccer team!</h2>
+    <p class = "center-text"> Here you will find statistics from last season, our core values, photos, 
+      <br>a form to tryout, fun facts, and the current WCC standings.
+    <h3>Last Season:</h3>
+    <p> Last season was an epic one for the Gaels. We held a 12-2-4 record having the most wins since 2001, as well as tying program record with 6 straight shutouts. The Gaels placed second in the WCC and finished the season ranked 42 in the nation. Head coach Theresa Romagnolo was named the WCC coach of the year, along with player Kate Plachy being named WCC goalkeeper of the year. We set a program record with 7 WCC victories and recorded 12 shutouts - the second most in program history.
+       </p>
+    <h3>
+    Our team values include:
+    </h3>
+      <ul>
+      <li>Competitive - Every player is expected to treat every practice as if it is a game.</li>
+      <li>Resilience - Gaels rise up through hard challenges and overcome them.</li>
+      <li>Unity - Cultivate a good team culture that lifts those around you.</li>
+    </ul>
+    <h3>
+
+<div id="weather-box">
+  <strong>Moraga Campus Weather</strong>
+  <p id="weather">Loading weather...</p>
+</div>
+      Photos from the season:
+    </h3>
+    <div class="image-grid">
+    <img src="teampic1.jpeg"
+         alt=" ">
+    <img src="teampic2.jpeg"
+         alt=" ">
+    <img src="teampic3.jpeg" 
+         alt=" ">
+    <img src="teampic4.jpeg" 
+         alt=" ">
+</div>
+    
+ <h3 class = "tryout">Tryout Form</h3>
+<form id="tryout-form" class="centered-form">
+  <div class="form-field">
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <div class="error-message" id="name-error"></div>
+  </div>
+
+  <div class="form-field">
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <div class="error-message" id="email-error"></div>
+  </div>
+
+  <div class="form-field">
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+    <div class="error-message" id="age-error"></div>
+  </div>
+
+  <button type="submit">Submit</button>
+  <div id="form-message"></div>
+</form>
+
+<script src="script.js"></script>
+    
+      </body>
+  
+  
+</html>

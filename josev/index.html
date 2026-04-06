@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWAC – Center for Writing Across the Curriculum | SMC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <img src="images/smc-logo.png" alt="Saint Mary's College Logo" class="logo" />
+      <div class="header-text">
+        <h1>Center for Writing Across the Curriculum</h1>
+        <p class="tagline">Saint Mary's College of California</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#photos">Photos</a>
+      <a href="#appointment">Book a Session</a>
+    </nav>
+  </header>
+
+  <!-- WEATHER BANNER -->
+  <div class="weather-banner">
+    <span id="weather-display">Loading campus weather...</span>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>What is CWAC?</h2>
+    <p>
+      The <strong>Center for Writing Across the Curriculum (CWAC)</strong> at SMC
+      is a free, student-centered resource that supports writers at every stage of the writing
+      process. Whether you're working on an essay, a scientific lab report, or a senior
+      thesis, CWAC tutors are here to help no matter what.
+    </p>
+    <p>
+      CWAC tutors are trained SMC students and faculty who provide one-on-one consultations
+      focused on your goals as a writer beyond just fixing any errors.
+    </p>
+
+    <h3>Who Should Visit CWAC?</h3>
+    <ol>
+      <li>Students starting a paper and needing help brainstorming or outlining</li>
+      <li>Writers who want feedback on a rough draft before submitting</li>
+      <li>Students who struggle with grammar, citations, or academic conventions</li>
+      <li>Anyone writing a lab report, research paper, or creative piece</li>
+      <li>Students preparing graduate school or scholarship application essays</li>
+    </ol>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section alt-bg">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Essay Tutoring</h3>
+        <p>Get one-on-one help with argument structure, thesis development, and organization for any essay type.</p>
+      </div>
+      <div class="service-card">
+        <h3>Grammar / Style</h3>
+        <p>Work through concerns like grammar, punctuation, and academic tone with a tutor.</p>
+      </div>
+      <div class="service-card">
+        <h3>Research Papers</h3>
+        <p>From finding sources to creating citations (MLA, APA, etc...), CWAC can guide your through the process.</p>
+      </div>
+      <div class="service-card">
+        <h3>Scientific Writing</h3>
+        <p>CWAC supports lab reports, scientific papers, and STEM writing with knowledgable feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section id="photos" class="section">
+    <h2>Life at CWAC</h2>
+    <p>A look at our tutoring center.</p>
+    <div class="photo-grid">
+      <figure>
+        <img src="images/photo1.jpeg" alt="The CWAC main room with round tables and orange walls" />
+        <figcaption>The CWAC main tutoring room</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo2.jpeg" alt="CWAC front desk with appointment sign and welcome sign" />
+        <figcaption>Check in at the front desk</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo3.jpeg" alt="CWAC tutoring seating area with whiteboards showing standard questions" />
+        <figcaption>One-on-one tutoring seating area</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo4.jpeg" alt="CWAC bookshelf displaying rubber ducks and student publications" />
+        <figcaption>Student publications on display at CWAC</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT FORM -->
+  <section id="appointment" class="section alt-bg">
+    <h2>Book a tutoring Session</h2>
+    <p>Fill out the form below to request a CWAC tutoring appointment.</p>
+
+    <form id="appt-form" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" placeholder="Name Here" />
+        <span class="error-msg" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">SMC Email *</label>
+        <input type="email" id="email" placeholder="jlv1@stmarys-ca.edu" />
+        <span class="error-msg" id="email-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="writing-type">Type of Writing *</label>
+        <select id="writing-type">
+          <option value="">-- Select a type --</option>
+          <option value="essay">Essay</option>
+          <option value="research">Research Paper</option>
+          <option value="lab">Lab Report / Scientific Writing</option>
+          <option value="creative">Creative Writing</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="error-msg" id="type-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Brief Description of Your Writing *
+          <span id="char-count" class="char-count">0 / 300</span>
+        </label>
+        <textarea id="description" maxlength="300" rows="4"
+          placeholder="Briefly describe your assignment or what you need help with..."></textarea>
+        <span class="error-msg" id="desc-error"></span>
+      </div>
+
+      <button type="submit" id="submit-btn">Request Appointment</button>
+      <p id="form-success" class="success-msg" style="display:none;">
+        Request submitted! A CWAC tutor will reach out to you soon.
+      </p>
+    </form>
+  </section>
+
+  <!-- FOOTER / SOURCES -->
+  <footer>
+    <p>&copy; 2025 Saint Mary's College of California - CWAC  WebPage</p>
+    <p class="sources">
+      <strong>Sources:</strong>
+      Saint Mary's College CWAC -
+      <a href="https://www.stmarys-ca.edu/academics/academic-resources-support/writing-across-curriculum"
+         target="_blank">stmarys-ca.edu</a> |
+      Open-Meteo Weather API -
+      <a href="https://open-meteo.com/" target="_blank">open-meteo.com</a> |
+      Google Fonts —
+      <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

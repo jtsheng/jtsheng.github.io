@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Programming Midterm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="brand">
+        <img class="brand-image" src="Images/SMC Logo_Primary Horizontal Fullcolor_Navy-Red.png" width="360" height="108" alt="Saint Mary&rsquo;s College of California, CS 322 Web Programming">
+        <p class="tagline">The Computer Science Major</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#topics">Topics</a>
+        <a href="#interest">Get updates</a>
+    </nav>
+</header>
+
+<main>
+    <section id="overview" class="intro">
+        <h1>Computer Science</h1>
+        <p>
+            At <strong>Saint Mary&rsquo;s College of California</strong>, a degree in Computer Science builds
+            strong foundations in programming, algorithms, and other important skills; preparing students
+            to build computer science solutions across industries.
+        </p>
+        <p>
+            The curriculum is designed to incorporate the ethics and philosophy of computer scientists
+            to give students a well-rounded education and the capability to thrive anywhere in the field.
+        </p>
+        <button type="button" class="button" id="details-toggle" aria-expanded="false" aria-controls="course-panel">
+            Show some classes
+        </button>
+        <div id="course-panel" class="panel" hidden>
+            <ul>
+                <li>Tech Ethics</li>
+                <li>Web Programming</li>
+                <li>Analysis of Algorithms</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="topics" class="topics">
+        <h2>Topics highlighted in Computer Science</h2>
+        <p class="topics-lead">
+            The courses are kept up to date with the newest technologies and areas of interest, most recently
+            with courses on AI.
+        </p>
+        <div class="topic-grid">
+            <article class="topic-card">
+                <h3>Programming Languages</h3>
+                <p>We teach Python, JavaScript, HTML, and CSS.</p>
+            </article>
+            <article class="topic-card">
+                <h3>Algorithms</h3>
+                <p>Graphing, Sorting, and Storing algorithms are all taught.</p>
+            </article>
+            <article class="topic-card">
+                <h3>Ethics</h3>
+                <p>Knowing how to use the teachings given in the Computer Science major is important to prevent misuse
+                of technology.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="gallery" class="topics">
+        <h2>CS major photos</h2>
+        <div class="photo-grid">
+            <img src="Images/CS-Image1.jpg" alt="Students working on laptops while heavily focused">
+            <img src="Images/CS-Image3.jpg" alt="Computer Science Title image">
+            <img src="Images/CS-Image2.jpg" alt="Students working at desktops">
+        </div>
+    </section>
+
+    <section class="topics">
+        <h2>Campus weather snapshot</h2>
+        <p class="topics-lead">
+            This button uses a weather API request for Moraga, CA to show current campus-area conditions.
+        </p>
+        <button type="button" class="button" id="weather-btn">Load current weather</button>
+        <p id="weather-status" class="form-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="interest" class="interest">
+        <h2>Request more information</h2>
+        <p>
+            Interested prospective students can leave a note for the department.
+        </p>
+        <form id="interest-form" class="interest-form" action="#" method="get">
+            <fieldset>
+                <legend>Tell us how to follow up</legend>
+                <div class="form-row">
+                    <label for="interest-name">Name</label>
+                    <input type="text" id="interest-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="interest-email">Email</label>
+                    <input type="email" id="interest-email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="interest-note">Question</label>
+                    <textarea id="interest-note" name="note" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="button">Send request</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>Saint Mary&rsquo;s College of California &middot; School of Science</p>
+    <p class="footer-meta">Prepared for a midterm assignment &middot; <span id="year"></span></p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
