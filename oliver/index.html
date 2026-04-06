@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<script src="club.js"></script>
+<head>
+    <link rel="stylesheet" href="club.css">
+    <title>SMC Climbing Club</title>
+</head>
+
+<body>
+    <header>
+        <h1>SMC Climbing Club</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to the SMC Climbing Club! We are a community of climbing enthusiasts who share a passion for scaling new heights. 
+                Whether you're a beginner or an experienced climber, our club offers a supportive environment for everyone.
+            </p>
+        </section>
+
+        <section>
+            <h2>Activities</h2>
+            <ul>
+                <li>Indoor climbing sessions</li>
+                <li>Outdoor climbing trips</li>
+                <li>Social events and meetups</li>
+            </ul>
+            <div class="gallery">
+                <img src="img/group_pic.png" alt="Group Picture" class="img1">
+                <img src="img/group_pic_2.png" alt="Friends Picture" class="img2">
+                <img src="img/person_climbing.png" alt="Person Climbing" class="img3">
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="quotes">
+                <h2>Testimonials</h2>
+                <p>"I had a great time at the Pacific Pipe trip!"</p>
+                <p>"Climbing at Mount Diablo was an amazing experience!"</p>
+                <p>"Being introduced to climbing has been a thrilling experience!"</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>SMC Climbing Wall Information</h2>
+            <p>The Saint Mary's College of California climbing wall is located at the Joseph Alioto Recreation Center. 
+                Completed in 2015, it features two auto-belay lanes and 3 top-rope lanes. 
+                Members must complete the belay class/assessment before climbing (top-rope).
+            </p>
+            <h4> Equipment Rental: all equipment is available to check out for recreation center members</h4>
+            <ul>
+                <li>Harness</li>
+                <li>Climbing shoes</li>
+                <li>Belay device</li>
+                <li>Carabiner</li>
+            </ul>
+        </section>
+
+        <section id="weather input">
+            <h2>Outdoor Event Weather Conditions</h2>
+            <p>Check 5-day forecast for outdoor climbing event locations.</p>
+            <p>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+                <span class="error-msg hidden" id="error-value-location">Enter a location</span>
+            </p>
+            <p>
+                <button id="check-weather">Check Weather</button>
+            </p>
+        </section>
+        <section id="forecast" class="hidden">
+            <h3>5 Day Forecast</h3>
+
+            <p id="loading-location">Loading...</p>
+            <p id="error-loading-location" class="error-msg"></p>
+            <table id="results-location">
+                <caption id="location-name"></caption>
+                <tr>
+                <td id="location-day1-name"></td>
+                <td id="location-day2-name"></td>
+                <td id="location-day3-name"></td>
+                <td id="location-day4-name"></td>
+                <td id="location-day5-name"></td>
+                </tr>
+                <tr>
+                <td id="location-day1-high"></td>
+                <td id="location-day2-high"></td>
+                <td id="location-day3-high"></td>
+                <td id="location-day4-high"></td>
+                <td id="location-day5-high"></td>
+                </tr>
+                <tr>
+                <td id="location-day1-low"></td>
+                <td id="location-day2-low"></td>
+                <td id="location-day3-low"></td>
+                <td id="location-day4-low"></td>
+                <td id="location-day5-low"></td>
+                </tr>
+                <tr>
+                <td><img id="location-day1-image"></td>
+                <td><img id="location-day2-image"></td>
+                <td><img id="location-day3-image"></td>
+                <td><img id="location-day4-image"></td>
+                <td><img id="location-day5-image"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Join Us</h2>
+            <p>Interested in joining the SMC Climbing Club?
+                Please fill out our membership form to be added to our mailing list. 
+                We look forward to climbing with you!
+            </p>
+            <form>
+                <div>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName">
+                </div>
+                <div>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" name="lName">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="cEmail">Confirm Email:</label>
+                    <input type="email" id="cEmail" name="cEmail">
+                </div>
+                <div id="formErrors"></div>
+                <div>
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Club President: Matthew Manzi | Vice President: Jack Rader | Treasurer: Naomi Jordon | 
+                <a href="mailto:okc2@stmarys-ca.edu">Contact Us</a> <!-- Email address is my own email as placeholder -->
+            </p>
+        </section>
+        <img src="img/logo.png" alt="The SMC logo" width="100px">
+    </footer>
+    <script src="club.js"></script>
+</body>
+</html>
