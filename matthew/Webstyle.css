@@ -1,0 +1,147 @@
+img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+img#LOGO {
+  width: auto;
+  height: 50px;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: Arpona, bold;
+  color: #D1D2C4;
+  text-align: center;
+  
+  background-color: #143257;
+
+  width: auto;
+  background-repeat: no-repeat;
+
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+}
+
+label#quote {
+    font-size: 24px;
+    background-color: #D1D2C4;
+    color: #000000;
+}
+
+body {
+   font: Arpona;
+   font-family: bold;
+   background: radial-gradient(#D1D2C4, lightgray);
+
+}
+
+label#form {
+    background-color: #D1D2C4;
+    font-size: 24px;
+    color: black;
+    border-radius: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+#formErrors {
+   color: red;
+}
+input[type=submit] {
+   width: 100%;
+   color: white;
+   background-color: #09f;
+   padding: 15px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+
+label {
+  font: Arpona;
+  font-family: bold;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #143257;
+  color: #D1D2C4;
+  width: auto;
+  border-radius: 10px;
+}
+
+p {
+   --color: #D1D2C4;
+   width: 1200px;
+   font-size: 24px;
+   padding: 10px;
+   --background: #143257;
+   --background: #D82732;
+   --box-shadow: 5px 5px 6px gray;
+   border-radius: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+#Event {
+    margin-top: auto;
+}
+
+input[type=text], input[type=email] {
+   width: 400px;
+   padding: 8px;
+   margin-top: 4px;
+   margin-bottom: 12px;
+   border: 1px solid #000000;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+label#input {
+    margin-bottom: auto;
+}
+
+
+/*NOT WORKING*/
+/*from Web Dev made Easy: https://www.youtube.com/watch?v=9X1p69BSp-k */
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex ;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem, 3rem -.75rem
+     hsla(0,0%,0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+}

@@ -1,0 +1,106 @@
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <title>SMC Climbing Club</title>
+        <link rel="stylesheet" href="Webstyle.css">
+        <script src="WebScript.js" defer></script>
+
+   </head>
+
+   <body>
+    <container> 
+      <img id="LOGO" src="230330_SMC logos_FINAL-01.webp" , alt="LOGO">
+    </container>
+
+    <h1>Saint Mary's College of California Rock Climbing Club</h1>
+    
+    <section>
+        <label id="Mission">Mission Statement:</label>
+      <style>
+
+        label ~ p {
+  border-top: 1px solid #81959B;
+}
+    label ~ input {
+  border-top: 1px solid #81959B;
+    }
+</style>
+        <p>Our goal is to create an inclusive community while providing opportunity for people from 
+            all skill levels in climbing an once in a life time experience. 
+            By providing transportation, climbing knowledge and experience, 
+            our members can experience the great outdoors and see exotic locations.
+        </p>
+        
+        <div id="container">
+            <img src="Climbing wall reopening rharper-110.jpg" , alt="MissionPicture">
+        </div>
+
+        <label id="Event">Latest Event:</label>
+        <p>During the month of march, the Saint Mary's Rock Climbing Club ventured to Pinnacles National Park
+             where we explored unique terrain and rock formation created by San Andreas Fault.
+        </p>
+
+        <section id="container">
+         <div id="slider-wrapper">
+            <div id="slider">
+                <img src="LeadTraining.jpeg" , alt="Photo1", id="slide-1"> 
+                <img src="PinnaclesNationalPark.jpeg" , alt="Photo2", id="slide-2">
+                <img src="ClimibingPinnaclesNationalPark.jpeg" , alt="Photo3", , id="slide-3">
+            </div>
+            <div class="slider-nav">
+                <a href="#slider-1"></a>
+                <a href="#slider-2"></a>
+                <a href="#slider-3"></a>
+            </div>
+         </div>
+        </section>
+
+    </section>
+
+    <label>Quotes from our club members</label>
+        <p id="quote">
+      <label id="quote", for="topicSelection">Select a topic:</label>
+      <select id="topicSelection">
+         <option>Choose one</option>
+         <option>love</option>
+         <option>motivational</option>
+         <option>wisdom</option>
+         <option>humor</option>
+      </select>
+   </p>
+   <p id="quote">
+      <label id="quote", for="countSelection">How many quotes?</label>
+      <select id="countSelection">
+         <option>1</option>
+         <option>2</option>
+         <option selected>3</option>
+         <option>4</option>
+         <option>5</option>
+      </select>
+   </p>
+   <p id="quote">
+      <button id="fetchQuotesBtn">Fetch Quotes</button>
+   </p>
+        <div id="quotes"></div>
+
+
+
+    <label id="input">Want to Join the club?</label>
+        
+            <ol>
+            <li><label id="form", for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName">
+            </li>
+            
+            <li>
+            <label id="form", for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            </li>
+            </ol>
+    
+    <div id="formErrors"></div>
+         <div>
+            <button id="submit">Register</button>
+         </div>
+   </body>
+</html>
