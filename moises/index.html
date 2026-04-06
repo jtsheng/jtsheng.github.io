@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Title for the webage -->
+  <meta charset="UTF-8">
+  <title>Saint Mary's College Men's Club Soccer</title>
+
+   <!-- Link for the css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- School logo photo -->
+    <img class= "smcLogo" src="images/smclogo.png" alt="Saint Mary's College Logo">
+
+    <header>
+         <!--Header, true shown title on the webpage-->
+        <h1>Saint Mary's College Men's Club Soccer</h1>
+    </header>
+    
+    <main>
+         <!--Smaller heading followed by discription of team-->
+        <h2>Team information</h2>
+        <p>
+      Saint Mary's Men's Club Soccer team is a competitive soccer team that allows students who are interested
+      in soccer and love a challenge to play against other schools. They currently play in the Division 2 bracket
+      of the West Coast Soccer Association. Some teams they play against include Sacramento State, Sonoma State,
+      Northeastern University, UC Davis, and the University of San Francisco, and more! Practices take place on Tuesday nights
+      from 6–8, Wednesday nights from 7–9, and Thursday nights from 7:30–9:30. Games are usually on Sunday afternoon. 
+        </p>
+
+         <!--list of standings of the curent season-->
+        <div>
+              <h2>Current standings of the season</h2>
+              <ol>
+                <li>Saint Mary's College of California</li> 
+                <li>University of California, Davis</li>
+                 <li>University of Nevada, Reno</li> 
+                 <li>Sonoma State University</li> 
+                 <li>Sacramento State University</li> 
+                 <li>University of San Francisco</li> 
+                 <li>Northeastern University</li>
+              </ol>
+        </div>
+    </main>
+
+     <!--Container for the photos -->
+    <h2>Team Gallery</h2>
+    <div class="photo-grid">
+        <img src="images/player2.jpg" alt="Player 2">
+        <img src="images/player3.jpeg" alt="Player 3">  
+        <img src="images/player1.jpg" alt="Player 1">
+    </div>
+
+     <!--Intrest form that collects name, email, and phone number-->
+    <form>
+        <h2>Player Interest Form</h2>
+        <div>
+            <label for="fullName">Full Name </label>
+            <input type="text" id="fullName" name="fullName">
+        </div>
+        <div>
+            <label for="email">Student Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number">
+        </div>   
+        <div id="formErrors"></div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+  
+     <!--API use and calling on html-->
+    <h2>Current Weather at Saint Mary's Recreational Turf Field</h2>
+    <p id="weather"></p>
+
+    <footer>
+        <p>Webpage by Moises</p>
+    </footer>
+
+     <!--JS connection-->
+    <script src="script.js"></script>
+</body>
+
+</html>

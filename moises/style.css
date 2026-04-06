@@ -1,0 +1,95 @@
+
+.smcLogo {
+    width:300px;
+    align-items: center;
+}
+
+h1 {
+    padding: 20px;
+    font-family: Arial;
+    font-size:28px;
+    color: white;
+    background: radial-gradient(red, darkBlue);
+   border-radius: 15px;
+   text-align: center;
+ }
+ 
+ h2 {
+   color: navy;
+   font-family: Verdana;
+   font-size: 21px;
+ }
+
+
+ p, li {
+   font-family: arial;
+   color: black;
+   font-size: 19px;
+ }
+ 
+ form {
+   font: 15px Arial;
+   background-color: navy;
+   padding: 10px;
+   width: 400px;
+   border-radius: 15px;
+   margin-top: 30px;
+ }
+ 
+ form h2,form label{
+   margin-top: 10px;
+   color: white;
+ }
+ 
+ .hide {
+     display: none;
+ }
+ 
+ #formErrors {
+    color: white;
+ }
+ 
+ #formErrors li {
+    color: white;
+ }
+
+ input[type=text], input[type=email], input[type=tel] {
+   width: 350px;
+   padding: 10px;
+   margin-top: 4px;
+   margin-bottom: 12px;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+ 
+ input.error  {
+    border: 2px solid red;
+ }
+ 
+ button {
+   background-color: white;
+   color: navy;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ button:hover {
+   background-color: lightgray;
+ }
+
+ .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+  .photo-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+  }
+
