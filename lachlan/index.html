@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Claeys North</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="center roundedborder infosection">
+            <img src="images/SMC Campus Lockups_Vertical_Navy_Campus Housing.png" class="logo">
+        </div>
+
+        <span class="bottompadding"></span>
+
+        <div class="center roundedborder infosection">
+            <h1>Claeys North</h1>
+            <p class="roundedborder notice">For the 2026-2027
+                academic year, <b>1st floor rooms will be either Single or Deluxe Single</b> (double room with 1
+                occupant) rooms.</p>
+            <p class="roundedborder notice">Claeys North and
+                Claeys South will be undergoing faciltlies upgrades during the summer. Buildings in the upgrade will be
+                offline during this time.</p>
+
+            <span class="bottompadding"></span>
+
+            <img class="roundedborder" src="images/FrontOfBuilding.jpg" style="aspect-ratio: 1.3133208255; width: 90%;"
+                alt="Front of building of Claeys North">
+            <span class="bottompadding"></span>
+            <p>Second-year suite-style living near central campus.</p>
+            <h2>History of the Building</h2>
+            <p class="sidepadding">Dedicated July 22, 1984 after Linus Claeys '32 (1909-1987) and his first wife, Edna.
+                The site used to be
+                the old rifle range for the Navy. Linus Claeys also has a section of Interstate 80 named for him.</p>
+            <div style="position: relative; display: inline-block; width: 90%;">
+                <img class="roundedborder" src="images/SMCA_PHC-0088_low.jpg"
+                    style="aspect-ratio: 1.2806830309; width: 100%;" alt="Front of building of Claeys North">
+                <div
+                    style="position: absolute; top: 46%; left: 90%; transform: translate(-50%, -50%); width: 120px; height: 60px; border: 5px solid #D82732; border-radius: 15%;">
+                </div>
+            </div>
+            <figcaption>Old photo of St Mary's Campus, with marked spot where Claeys North is today.</figcaption>
+            <span class="bottompadding"></span>
+        </div>
+
+        <span class="bottompadding"></span>
+
+        <div class="center roundedborder infosection">
+            <h1>Building Layout</h1>
+            <p class="sidepadding">Suites accommodate 6 residents, with 2 doubles and 2 singles. Each half of the suite
+                has a sink and common space, and each side is connected with a shared shower and toilet. Each room
+                includes a vanity dresser and lockable closet (two closets in double rooms). Each room feature a heater.
+            </p>
+
+            <span class="bottompadding"></span>
+
+            <h2>First Floor Layout:</h2>
+            <img class="roundedborder" src="images/FirstFloorLayout.png"
+                alt="Floor map of the first floor of Claeys North." style="aspect-ratio: 1.06779661017; width: 90%;">
+            <h2>Second Floor Layout:</h2>
+            <img class="roundedborder" src="images/SecondFloorLayour.png"
+                alt="Floor map of the second floor of Claeys North." style="aspect-ratio: 1.2510822511; width: 90%;">
+
+            <span class="bottompadding"></span>
+        </div>
+
+        <span class="bottompadding"></span>
+
+        <div class="center roundedborder infosection">
+            <h1>Building Amenities</h1>
+
+            <ul>
+                <li>Lounge with TV, kitchen area (oven, fridge, and sink) on each floor</li>
+                <li>Laundry with two washers and two dryers on each floor</li>
+                <li>Outdoor basketball court and barbeque</li>
+                <li>Independent heating in each room</li>
+                <li>Bike rack parking in front of building</li>
+                <li>Monthly ABM suite cleaning</li>
+            </ul>
+
+            <span class="bottompadding"></span>
+        </div>
+
+        <span class="bottompadding"></span>
+
+        <div class="center roundedborder infosection">
+            <h1>Submit a Tour Request</h1>
+
+            <p class="sidepadding">Schedule a tour to come see the hall's common areas and select rooms (subject to
+                availability). Tours will take place between Monday through Friday, from 9:00am to 3:30pm.</p>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" id="tourform">
+                <div class="formItem">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="formItem">
+                    <label for="email">SMC Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="formItem">
+                    <label for="studentId">Student Id:</label>
+                    <input type="number" id="studentId" name="studentId" required>
+                </div>
+
+                <div class="formItem">
+                    <label for="classLevel">Anticipated Graduation Semester:</label>
+                    <input type="text" id="classLevel" name="classLevel" required>
+                </div>
+
+                <div class="formItem">
+                    <label for="tourWeek">Preferred Tour Week:</label>
+                    <input type="week" id="tourWeek" name="tourWeek" required min="2026-W13" max="2026-W17">
+                </div>
+
+                <div class="formItem">
+                    <label>Suite Style Buildings Interested In Touring:</label>
+                    <div>
+                        <input type="checkbox" id="agenoA" name="tourBuildings[]" value="agenoA">
+                        <label for="agenoA">Michael E. Ageno Hall (Ageno A)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="agenoB" name="tourBuildings[]" value="agenoB">
+                        <label for="agenoB">Marjorie David Ageno (Ageno B)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="agenoC" name="tourBuildings[]" value="agenoC">
+                        <label for="agenoC">Ferdinand & Camille Ageno Hall (Ageno C)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="claeysNorth" name="tourBuildings[]" value="claeysNorth">
+                        <label for="claeysNorth">Claeys North</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="claeysSouth" name="tourBuildings[]" value="claeysSouth">
+                        <label for="claeysSouth">Claeys South</label>
+                    </div>
+                </div>
+
+                <div class="formItem">
+                    <input type="submit" value="Submit Tour Request">
+                </div>
+            </form>
+            <span class="bottompadding"></span>
+        </div>
+
+        <span class="bottompadding"></span>
+
+        <div class="center roundedborder infosection">
+            <h1>Weather On Campus</h1>
+
+            <p id="weathertemp">00.00°C</p>
+            <span class="bottompadding"></span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

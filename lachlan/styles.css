@@ -1,0 +1,76 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infosection {
+    background-color: white;
+    width: 80%;
+    max-width: 850px;
+}
+
+.logo {
+    aspect-ratio: 1.4166666667;
+    width: 30%;
+}
+
+.roundedborder {
+    border-radius: 25px;
+}
+
+.bottompadding {
+    padding-bottom: 1.5rem;
+}
+
+.sidepadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.formItem {
+    display: flex; 
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+.notice {
+    background-color: #F2BA2A; 
+    width: 80%; 
+    padding: 0.75rem;
+    border-radius: 15px;
+}
+
+body {
+    background-color: #6298C3;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 550px;
+}
