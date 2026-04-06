@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMC Notable Alumni - Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <img src="images/smc-logo-color.png" alt="Saint Mary's College of California" class="logo-img" width="574" height="82">
+    <h1>Notable Alumni Gallery</h1>
+    <p class="intro">
+      This is a showcase of notable alumni from Saint Mary&apos;s California. Click each photo to flip and see the back with a short bio.
+    </p>
+  </header>
+
+  <section class="weather-box" aria-live="polite">
+    <h2>Weather near Moraga, CA</h2>
+    <p id="weatherText">Loading weather...</p>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Photo grid (click a card)</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="form-section">
+    <h2>Quick survey</h2>
+    <form id="interestForm">
+      <label>
+        Your name:
+        <input type="text" name="fullName" id="fullName">
+      </label>
+      <label>
+        Semester you might apply:
+        <select id="semester" name="semester">
+          <option value="         ">         </option>
+          <option value="Fall 2026">Fall 2026</option>
+          <option value="Spring 2027">Spring 2027</option>
+          <option value="Fall 2027">Fall 2027</option>
+          <option value="Spring 2028">Spring 2028</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>I would be interested in applying for undergraduate programs</legend>
+        <label><input type="radio" name="interest" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="interest" value="2"> Disagree</label>
+        <label><input type="radio" name="interest" value="3"> Neutral</label>
+        <label><input type="radio" name="interest" value="4"> Agree</label>
+        <label><input type="radio" name="interest" value="5"> Strongly Agree</label>
+      </fieldset>
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <p id="formMessage" class="form-msg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
