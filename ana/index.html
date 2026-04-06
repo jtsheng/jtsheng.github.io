@@ -1,0 +1,86 @@
+<section>
+  <h1>Welcome to Saint Mary's College!</h1>
+
+<p>
+We are excited to welcome you to the Gael family! We’re here to support you and provide you with resources to ensure your success at Saint Mary’s College. Your college experience starts with New Student Orientation, an essential introduction to life at SMC that provides you with the resources you need for success.
+</p>
+  
+<p>
+At orientation, you’ll connect with new classmates and friends, learn about the support services available to you, and explore the many opportunities to get involved on campus. We can’t wait to see what you’ll achieve. Go Gaels!
+  </p> 
+</section>
+
+<section class="gallery-section">
+  <div class="image-grid">
+    
+    <div class="grid-item">
+      <img src="https://drive.google.com/uc?export=view&id=1cUThagmjzt1zxC8jXMuuT7xgFO6SErTv" alt="SMC Campus">
+    </div>
+
+    <div class="grid-item">
+      <img src="https://drive.google.com/uc?export=view&id=1zn0KNqUwPW6dXXVaENk1LZqLwLbVR_AG" alt="Welcome Home Event">
+    </div>
+
+    <div class="grid-item">
+      <img src="https://drive.google.com/uc?export=view&id=1_bJbxURXBm4lN2dZIGZA_Ji6P3GBlEC8" alt="Welcome Students">
+    </div>
+  </div>
+</section>
+
+<section class = "dates-section">
+  <h2 class = "section-title">Orientation Dates &amp; Times</h2>
+
+<ul id ="datelist">
+  <li onclick="selectDate(this)"><strong>June 18, 2026</strong> - 8:30 AM - 4:00 PM</li>
+  <li onclick="selectDate(this)"><strong>June 25, 2026</strong> - 8:30 AM - 4:00 PM</li>
+  <li onclick="selectDate(this)"><strong>June 27, 2026</strong> - 8:30 AM - 4:00 PM</li>
+</ul>
+
+<p id="selectedDateMessage"></p>
+  
+ <section class="weather-section">
+  <h2>Current Weather on Campus</h2>
+  <p>Click the button to view the latest weather at
+    SMC.</p>
+
+  <button id="weatherButton" onclick="getCampusWeather()">Check Campus Weather</button>
+
+  <p id="weatherResult"></p>
+</section>
+
+<h2>Registration</h2>
+<p>
+  All new students need to register for orientation. Each student is allowed to bring two guests to orientation; we have a program just for them! 
+</p>
+
+<a href="#" class="register-link" onclick="toggleForm()">Register for Orientation</a>
+
+<div id="registrationForm" style="display: none; margin-top: 20px;">
+  <h3>Orientation Registration</h3>
+
+  <label>Full Name:</label><br>
+  <input type="text" id="name"><br><br>
+
+  <label>Email:</label><br>
+  <input type="text" id="email"><br><br>
+
+  <label>Number of Guests (0–2):</label><br>
+  <input type="number" id="guests" min="0" max="2"><br><br>
+
+  <button onclick="submitForm()">Submit</button>
+
+  <p id="formMessage"></p>
+</div>
+
+
+  <div id="logoContainer">
+    <img
+      id="logo"
+      src="https://www.stmarys-ca.edu/sites/default/files/styles/two_column_billboard/public/2023-08/Logo%402x.png"
+      alt="Saint Mary's College Logo"
+    >
+  </div>
+
+  <button onclick="moveLogo()">Go Gaels!</button>
+</section>
+  
