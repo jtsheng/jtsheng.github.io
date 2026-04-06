@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+    font-size: 45px;
+}
+
+p {
+    font-size: large;
+}
+
+#pictures {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+}
+
+#pictures > div > img {
+    width: 500px;
+}
+
+.vertical {
+    width: auto;
+    height: auto;
+}
+
+html {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
