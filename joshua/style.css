@@ -1,0 +1,167 @@
+body {
+    background-color: #AED9E0;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+#weatherDivContainer {
+    display: flex;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#weatherDiv {
+    display: flex;
+    font-size: 20px;
+
+    width: 50%;
+    border: 2px solid black;
+
+    justify-content: center;
+    place-items: center;
+
+}
+
+#weatherDiv img {
+    width: 40px;
+    height: 40px;
+
+}
+
+#intro-message {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+
+
+#book-img {
+    width: 150px;
+    height: 150px;
+    animation: moveBook;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+#computer-img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+@keyframes moveBook {
+    from {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(390px, -40px);
+        scale: 0.4;
+    }
+}
+
+#submit {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#submit:hover {
+    background-color: lightblue;
+    transform: scale(1.01);
+    cursor: pointer;
+
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 20px;
+}
+
+h3 {
+    display: flex;
+    background-color: coral;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+
+#grid-container {
+    display: grid;
+    background-color: lightgray;
+    width: auto;
+    max-width: 40%;
+    justify-content: left;
+    gap: 10px;
+    grid-template-rows: auto auto auto;
+    border: 2px solid black;
+}
+
+
+#grid-container img,
+#bookCanvas {
+    transition: ease-in-out 0.5s;
+}
+
+
+
+#grid-container img:hover,
+#bookCanvas:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+
+}
+
+
+
+
+#learnMore {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 40%;
+    padding: 10px;
+    gap: 2px;
+    border: 2px solid black;
+
+}
+
+#asterisk {
+    color: red;
+}
+
+
+#formerrors {
+    color: red;
+    font-size: 14px;
+}
+
+#formSuccess {
+    color: green;
+    font-size: 14px;
+}
